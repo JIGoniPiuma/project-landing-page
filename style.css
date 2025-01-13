@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  content: "";
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Establece el modelo de caja más predecible */
+}
+
+/* Pseudo-elementos globales */
+*::before,
+*::after {
+  content: "";
+  box-sizing: inherit; /* Hereda el modelo de caja del elemento */
+}
+
+/* Estilos globales */
+html,
+body {
+  height: 100%; /* Asegura que el cuerpo ocupe todo el alto de la ventana */
+  font-family: Arial, sans-serif; /* Fuente base del proyecto */
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+  background-color: #fff; /* Color de fondo base */
+  color: #333; /* Color del texto base */
+}
+
+/* Enlaces sin estilo predeterminado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas sin estilo predeterminado */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Imágenes y videos responsivos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
